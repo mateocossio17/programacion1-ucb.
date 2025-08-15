@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Algoritmos</title>
+    <style>
+        :root {
+            --color-primario: #FFCF15;
+            --color-secundario: #00477A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--color-secundario);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 2rem;
+        }
+
+        button {
+            background-color: var(--color-primario);
+            color: var(--color-secundario);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e6b700;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--color-secundario);
+            color: white;
+            text-align: center;
+            padding: 0.8rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Proyecto de Algoritmos</h1>
+    </header>
+
+    <main>
+        <button onclick="mi_primer_algoritmo()">Ejecutar Algoritmo</button>
+    </div>
+    </divclass = "row">
+    <div style="text-align: center; margin: 2rem;">
+    <input 
+        type="text" 
+        id="inputBinario" 
+        placeholder="Ingresa número binario" 
+        style="padding: 0.5rem 1rem; font-size: 1rem; border-radius: 6px; border: 1px solid #ccc;"
+  />
+  <button 
+    onclick="ejecutarConversion()" 
+    style="background-color: #FFCF15; color: #000; border: none; padding: 0.5rem 1rem; margin-left: 1rem; font-size: 1rem; border-radius: 6px; cursor: pointer;"
+  >
+    Convertir a Decimal
+  </button>
+</div>
+
+        
+    </main>
+
+    <footer>
+        &copy; 2025 - Mateo | Todos los derechos reservados
+    </footer>
+
+    <!-- Importa tu archivo con las funciones -->
+    <script src="aprendiendo.js"></script>
+</body>
+</html>

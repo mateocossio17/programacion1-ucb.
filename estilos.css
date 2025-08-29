@@ -1,0 +1,148 @@
+/* estiloUCB.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#resultado {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: 500;
+    text-align: center;
+}
+body.container {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f5c518; /* dorado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(245, 197, 24, 0.3);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #f5c518;
+}
+
+.input-text {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c518;
+    border-radius: 8px;
+    background-color: #0d0d0d;
+    color: #f5c518;
+}
+
+.input-text::placeholder {
+    color: #999;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5c518;
+    color: #0d0d0d;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #d4a017;
+    transform: scale(1.02);
+}
+
+.btn-danger {
+    background-color: #a00;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #800;
+}
+
+/* Cuadros individuales para cada número */
+.cuadro-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cuadro {
+    background-color: #f5c518;
+    color: #0d0d0d;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}

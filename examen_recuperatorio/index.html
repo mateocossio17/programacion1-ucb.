@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizador de Matriz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Operaciones Básicas</h2>
+      <button id="fillBtn">Llenar Aleatorio</button>
+      <button id="clearBtn">Limpiar</button>
+
+      <h3>Ejercicios Práctico #1 (1-25)</h3>
+      <button id="ejercicio1Btn">Ejercicio #1: Suma Total</button>
+      <button id="ejercicio2Btn">Ejercicio #2: Máximo y Mínimo</button>
+      <button id="ejercicio3Btn">Ejercicio #3: Promedio de Elementos</button>
+      <button id="ejercicio4Btn">Ejercicio #4: Contar Ocurrencias</button>
+      <button id="ejercicio5Btn">Ejercicio #5: Invertir Filas</button>
+      <button id="ejercicio6Btn">Ejercicio #6: Rotar 90° (Nueva Matriz)</button>
+      <button id="ejercicio7Btn">Ejercicio #7: Transpuesta (Nueva Matriz)</button>
+      <button id="ejercicio8Btn">Ejercicio #8: Multiplicación de Matrices</button>
+      <button id="ejercicio9Btn">Ejercicio #9: Diagonal Principal</button>
+      <button id="ejercicio10Btn">Ejercicio #10: Diagonal Secundaria</button>
+      <button id="ejercicio11Btn">Ejercicio #11: Suma de Filas</button>
+      <button id="ejercicio12Btn">Ejercicio #12: Suma de Columnas</button>
+      <button id="ejercicio13Btn">Ejercicio #13: Transpuesta (In-place)</button>
+      <button id="ejercicio14Btn">Ejercicio #14: Matriz Identidad</button>
+      <button id="ejercicio15Btn">Ejercicio #15: Matriz Simétrica</button>
+      <button id="ejercicio16Btn">Ejercicio #16: Triangular Superior</button>
+      <button id="ejercicio17Btn">Ejercicio #17: Triangular Inferior</button>
+      <button id="ejercicio18Btn">Ejercicio #18: Suma de Diagonales</button>
+      <button id="ejercicio19Btn">Ejercicio #19: Suma de Bordes</button>
+      <button id="ejercicio20Btn">Ejercicio #20: Max y Min con Posición</button>
+      <button id="ejercicio21Btn">Ejercicio #21: Promedio de la Matriz</button>
+      <button id="ejercicio22Btn">Ejercicio #22: Contar Pares/Impares</button>
+      <button id="ejercicio23Btn">Ejercicio #23: Buscar Valor (Posiciones)</button>
+      <button id="ejercicio24Btn">Ejercicio #24: Suma Arriba/Abajo Diag. Prin.</button>
+      <button id="ejercicio25Btn">Ejercicio #25: Matriz Espejo Horizontal</button>
+      
+      <h3>Ejercicios Práctico #2 (26-88)</h3>
+      <button id="ejercicio26Btn">Ejercicio #26: Reflejo Vertical</button>
+      <button id="ejercicio27Btn">Ejercicio #27: Reflejo Horizontal</button>
+      <button id="ejercicio28Btn">Ejercicio #28: Rotación 90°</button>
+      <button id="ejercicio29Btn">Ejercicio #29: Rotación 180°</button>
+      <button id="ejercicio30Btn">Ejercicio #30: Diagonal Principal (1s)</button>
+      <button id="ejercicio31Btn">Ejercicio #31: Diagonal Secundaria (1s)</button>
+      <button id="ejercicio32Btn">Ejercicio #32: Triángulo Superior</button>
+      <button id="ejercicio33Btn">Ejercicio #33: Triángulo Inferior</button>
+      <button id="ejercicio34Btn">Ejercicio #34: Marco (Bordes 1s)</button>
+      <button id="ejercicio35Btn">Ejercicio #35: Patrón Simple (0/1)</button>
+      <button id="ejercicio36Btn">Ejercicio #36: Llenar con Suma Total</button>
+      <button id="ejercicio37Btn">Ejercicio #37: Llenar con Promedio</button>
+      <button id="ejercicio38Btn">Ejercicio #38: Llenar con Máximo</button>
+      <button id="ejercicio39Btn">Ejercicio #39: Llenar con Mínimo</button>
+      <button id="ejercicio40Btn">Ejercicio #40: Cuadrante 1</button>
+      <button id="ejercicio41Btn">Ejercicio #41: Cuadrante 2</button>
+      <button id="ejercicio42Btn">Ejercicio #42: Transpuesta</button>
+      <button id="ejercicio43Btn">Ejercicio #43: Simetría Principal</button>
+      <button id="ejercicio44Btn">Ejercicio #44: Submatriz 3x3 Centro</button>
+      <button id="ejercicio45Btn">Ejercicio #45: Intercambiar Fila 0/1</button>
+      <button id="ejercicio46Btn">Ejercicio #46: Intercambiar Col 0/1</button>
+      <button id="ejercicio47Btn">Ejercicio #47: Llenar con Suma Fila</button>
+      <button id="ejercicio48Btn">Ejercicio #48: Llenar con Suma Columna</button>
+      <button id="ejercicio49Btn">Ejercicio #49: Llenar con Producto Fila</button>
+      <button id="ejercicio50Btn">Ejercicio #50: Llenar con Promedio Diag.</button>
+      <button id="ejercicio51Btn">Ejercicio #51: Patrón Ajedrez</button>
+      <button id="ejercicio52Btn">Ejercicio #52: Matriz Identidad</button>
+      <button id="ejercicio53Btn">Ejercicio #53: Reflejo Diag. Secundaria</button>
+      <button id="ejercicio54Btn">Ejercicio #54: Llenado Concéntrico</button>
+      <button id="ejercicio55Btn">Ejercicio #55: Invertir Filas Pares</button>
+      <button id="ejercicio56Btn">Ejercicio #56: Invertir Cols Pares</button>
+      <button id="ejercicio57Btn">Ejercicio #57: Interc. Fila Central</button>
+      <button id="ejercicio58Btn">Ejercicio #58: Interc. Col Central</button>
+      <button id="ejercicio59Btn">Ejercicio #59: Llenar con i + j</button>
+      <button id="ejercicio60Btn">Ejercicio #60: Llenar con i * j</button>
+      <button id="ejercicio61Btn">Ejercicio #61: Llenado Progresivo Horiz.</button>
+      <button id="ejercicio62Btn">Ejercicio #62: Llenado Progresivo Vert.</button>
+      <button id="ejercicio63Btn">Ejercicio #63: Triáng. Inferior Secund.</button>
+      <button id="ejercicio64Btn">Ejercicio #64: Triáng. Superior Secund.</button>
+      <button id="ejercicio65Btn">Ejercicio #65: Anti-Bordes</button>
+      <button id="ejercicio66Btn">Ejercicio #66: Zigzag Horizontal</button>
+      <button id="ejercicio67Btn">Ejercicio #67: Diagonal Superior Única</button>
+      <button id="ejercicio68Btn">Ejercicio #68: Diagonal Inferior Única</button>
+      <button id="ejercicio69Btn">Ejercicio #69: Potencias de 2</button>
+      <button id="ejercicio70Btn">Ejercicio #70: Caracol / Espiral</button>
+      <button id="ejercicio71Btn">Ejercicio #71: Llenar con Suma Diags.</button>
+      <button id="ejercicio72Btn">Ejercicio #72: Llenar con Conteo Pares</button>
+      <button id="ejercicio73Btn">Ejercicio #73: Reflejo Mitad Horiz.</button>
+      <button id="ejercicio74Btn">Ejercicio #74: Reflejo Mitad Vert.</button>
+      <button id="ejercicio75Btn">Ejercicio #75: Llenar con Ceros</button>
+      <button id="ejercicio76Btn">Ejercicio #76: Llenar con 1,2,3... (Col)</button>
+      <button id="ejercicio77Btn">Ejercicio #77: Llenar con 1,2,3... (Fila)</button>
+      <button id="ejercicio78Btn">Ejercicio #78: Llenar con Índice Fila (i)</button>
+      <button id="ejercicio79Btn">Ejercicio #79: Llenar con Índice Col (j)</button>
+      <button id="ejercicio80Btn">Ejercicio #80: Llenar con Cuadrante (1-4)</button>
+      <button id="ejercicio81Btn">Ejercicio #81: Patrón en X (Diagonales)</button>
+      <button id="ejercicio82Btn">Ejercicio #82: Patrón de Rombo</button>
+      <button id="ejercicio83Btn">Ejercicio #83: Patrón de Cruz Centrada</button>
+      <button id="ejercicio84Btn">Ejercicio #84: Transpuesta</button>
+      <button id="ejercicio85Btn">Ejercicio #85: Simulación Suma Mat. (i+j)</button>
+      <button id="ejercicio86Btn">Ejercicio #86: Generar 0/1 Alternado</button>
+      <button id="ejercicio87Btn">Ejercicio #87: Zigzag Vertical</button>
+      <button id="ejercicio88Btn">Ejercicio #88: Patrón Columna Espejo</button>
+    </aside>
+    <main class="canvas-area">
+      <div class="canvas-wrapper">
+        <canvas id="matrixCanvas"></canvas>
+      </div>
+    </main>
+  </div>
+
+  <script src="matrix.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
